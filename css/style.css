@@ -6,12 +6,6 @@ body {
 	background: url('/images/clean_textile.png');
 }
 
-/* preload images */
-body:after { 
-	display:none;
- 	content: url(/images/link-hover.svg);
-}
-
 h2 {
 	text-transform:uppercase;
 	font-weight: normal;
