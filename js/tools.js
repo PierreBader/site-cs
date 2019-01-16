@@ -20,7 +20,7 @@ function smoothScrollForInternalLinks() {
             return false;
         }
         $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top - menuHeight()
+            scrollTop: $($(this).attr('href')).offset().top - menuHeight() - 40
         }, 500);
         return false;
     });
@@ -28,7 +28,7 @@ function smoothScrollForInternalLinks() {
 
 function menuHeight() {	
     if ($("#menuMqDetector").css("float") === "left") {
-        return $("#navSection").height() + 50;
+        return $("#navSection").height();
     } else {
         return 48;
     }
