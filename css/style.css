@@ -2,7 +2,8 @@ body {
 	font-family: 'Noto Serif', serif;
 	margin: 0;
 	text-align: justify;
-    font-size: 18px;
+	font-size: 18px;
+	background: url('/images/clean_textile.png');
 }
 
 /* preload images */
@@ -13,7 +14,20 @@ body:after {
 
 h2 {
 	text-transform:uppercase;
-	font-weight:800;
+	font-weight: normal;
+	text-align: center;
+	font-size: 200%;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    margin-top: 0.5em;
+	text-align: center;
+	font-weight: normal;
+}
+
+hr {
+	width: calc( 100% - 40px );
 }
 
 #navSection {
@@ -86,7 +100,7 @@ nav li {
 
 #menuMqDetector {float:left;}
 
-.site-section {
+.site-section .grid-container {
 	padding-top: 1em;
 	padding-bottom: 2em;
 }
@@ -105,7 +119,7 @@ h3 {
 	}
 	
 	.nav-padding {
-		height: 4em;
+		height: 5em;
 	}
 	
 	nav img {
@@ -136,11 +150,11 @@ h3 {
 	}
 	
 	.nav-padding {
-		height: 3em;
+		height: 4em;
 	}
 	
 	nav a {		
-		line-height: 3.5em;
+		line-height: 4.5em;
 		height: 3.5em;
 	}
 	nav img {
@@ -192,16 +206,197 @@ h3 {
 	}	
 }
 
+#photo1 .background {
+	background-image: url('/images/photo1.jpeg');
+}
+
+#photo2 .background {
+	background-image: url('/images/photo2.jpeg');
+}
+
+#photo3 .background {
+	background-image: url('/images/photo3.jpeg');
+}
+
+#photo4 .background {
+	background-image: url('/images/photo4.jpeg');
+}
+
+#photo5 .background {
+	background-image: url('/images/photo5.jpeg');
+}
+
+
+.photo-section .background {
+	background-repeat: no-repeat;
+}
+
+#accueil h1 {
+	text-align: center;
+}
+#accueil .subtitle {
+	text-align: center;
+}	
+
+
+@media only screen and (min-width: 1240px) {
+	.photo-section .background {
+		max-width: 1240px;
+		background-size: 100%;
+		margin: auto;	
+		height: 415px;
+	}
+	
+	.mobile-logo {
+		display: none;
+	}
+	
+	#accueil h1 {
+		font-size: 220%;
+	}
+	#accueil .subtitle {
+		font-size: 140%;
+	}
+	
+	.left-column .tarif-card {
+		margin: 0em 2em 3em 0;
+	}
+
+	.right-column .tarif-card {
+		margin: 0em 0 3em 2em;
+	}
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1239px) {
+	.photo-section .background {
+		max-width: 100vw;
+		background-size: 100vw;
+		height: 34.58vw;
+		margin: auto;	
+	}
+
+	.mobile-logo {
+		display: none;
+	}
+
+	#accueil h1 {
+		font-size: 190%;
+	}
+	#accueil .subtitle {
+		font-size: 100%;
+	}	
+	
+	.left-column .tarif-card {
+		margin: 0em 2em 3em 0;
+	}
+
+	.right-column .tarif-card {
+		margin: 0em 0 3em 2em;
+	}
+}
+
+@media only screen and (max-width: 899px) {
+	.photo-section .background {
+		max-width: 100vw;
+		background-size: 900px;
+		height: 311px;
+		margin: auto;	
+		background-position-x: calc( 50vw - 450px);
+	}
+
+	.mobile-logo {
+		display: initial;
+		width: 30vw;
+		margin: 5vh 35vw 0 35vw;
+	}
+	
+	.tarif-card {
+		margin-bottom: 2em;
+	}
+}
+
+#accueil .grid-container,
+#diplome .grid-container {
+	background: #ffffff;
+}
+
+#diplome hr {
+	margin-top: 3em;
+}
+
+#diplome img {
+	max-width: 90vw;
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+#diplome a {
+    text-align: center;
+    width: 100%;
+	display: inline-block;
+	cursor: zoom-in;
+}
+
+#apropos .grid-container,
+#valeurs .grid-container,
+#contact .grid-container {
+	background: url('/images/ricepaper2.png');
+}
+
+#mission .grid-container {
+	background: url('/images/dust_scratches.png');
+}
+
+#objectif h2,
+#objectif h3,
+#tarifs h2 {
+    font-weight: normal;
+}
+
+#objectif .grid-container,
+#tarifs .grid-container {
+	background-color: #382425;
+	color: #fffffc;
+}
+
+.tarif-card {
+	background-color: beige;
+	color: #382425;
+	padding: 1em 2em;
+    text-align: center;
+}
+
+
+.tarif-titre {
+    text-transform: uppercase;
+    font-size: 140%;
+	font-weight: bold;
+	padding-bottom: 0.5em;
+}
+
+.tarif-details {
+	border-top: 1px solid #382425;
+	padding-top: 0.5em;
+}
+
+#contact a {
+	margin: 1em;
+	font-size: 150%;
+	text-align: center;
+    width: 100%;
+    display: inline-block;
+}
 
 .with_icon:before {
 	content: "\00a0";
-	background-size: 2.5em;
-	height: 2.5em;
-	width: 2.5em;
-	position: relative;
-	display: inline-block;
-	vertical-align: middle;
-	margin-right: 0.5em;
+    background-size: 2.5em;
+    height: 2.5em;
+    width: 2.5em;
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1em;
+    margin-top: 1.3em;
 }
 
 .icon_mail:before {
@@ -210,14 +405,4 @@ h3 {
 
 .icon_phone:before {
 	background-image: url('/images/phone.svg');
-}
-
-#diplome img {
-	max-width: 90vw;
-}
-
-#diplome a {
-    text-align: center;
-    width: 100%;
-    display: inline-block;
 }
