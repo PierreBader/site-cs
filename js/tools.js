@@ -16,8 +16,8 @@ $(window).load(function() {
 
 function smoothScrollForInternalLinks() {
     $('a[href^="#"]').click(function() {
-        if ($(this).attr('href') === "#") {
-            return false;
+        if ($(this).attr('href') === "#" || $(this).attr('href') === "#mentions-legales") {
+            return true;
         }
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top - menuHeight() - 40

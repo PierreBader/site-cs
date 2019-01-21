@@ -400,3 +400,16 @@ h3 {
 .icon_phone:before {
 	background-image: url('/images/phone.svg');
 }
+
+#mentions-legales {
+	font-size: 80%;
+	max-width: 1200px;
+    z-index: 1000;
+}
+#mentions-legales h2,  
+#mentions-legales h3 {
+	text-align: left;
+}
+.blocker{
+    z-index: 1000;
+}
