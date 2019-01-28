@@ -361,7 +361,16 @@ h3 {
 #objectif .grid-container,
 #tarifs .grid-container {
 	background-color: #382425;
-	color: #f0dac0;
+	color: #f0dac0;    
+}
+
+#objectif .grid-container,
+#tarifs .grid-container  {
+	text-shadow: 0px 0px 5px black, 0px 0px 10px black;
+}
+
+#tarifs .tarif-card {
+	text-shadow: 0px 0px 5px #fffef5;
 }
 
 .tarif-card {
