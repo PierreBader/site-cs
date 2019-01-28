@@ -300,12 +300,23 @@ h3 {
 
 	.mobile-logo {
 		display: initial;
-		width: 30vw;
-		margin: 5vh 35vw 0 35vw;
+		width: 40vw;
+		margin: 5vh 25vw 0 25vw;
 	}
 	
 	.tarif-card {
 		margin-bottom: 2em;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	body {
+		font-size:3.6vw;
+	}
+	
+	.icon {
+		width: 12.8vw;
+		height: 12.8vw;
 	}
 }
 
@@ -350,11 +361,11 @@ h3 {
 #objectif .grid-container,
 #tarifs .grid-container {
 	background-color: #382425;
-	color: #fffffc;
+	color: #f0dac0;
 }
 
 .tarif-card {
-	background-color: beige;
+	background-color: #f0dac0;
 	color: #382425;
 	padding: 1em 2em;
     text-align: center;
@@ -377,28 +388,17 @@ h3 {
 	margin: 1em;
 	font-size: 150%;
 	text-align: center;
-    width: 100%;
+	width: 80%;
     display: inline-block;
+    vertical-align: bottom;
 }
 
-.with_icon:before {
-	content: "\00a0";
-    background-size: 2.5em;
-    height: 2.5em;
-    width: 2.5em;
-    position: absolute;
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 1em;
-    margin-top: 1.3em;
+.contact-link {
+    display: flex;
 }
 
-.icon_mail:before {
-	background-image: url('/images/mail.svg');
-}
-
-.icon_phone:before {
-	background-image: url('/images/phone.svg');
+.icon {
+	width: 64px;
 }
 
 #mentions-legales {
@@ -412,4 +412,7 @@ h3 {
 }
 .blocker{
     z-index: 1000;
+}
+.top-padded {
+	padding-top: 2em;
 }
