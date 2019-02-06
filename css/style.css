@@ -420,3 +420,7 @@ h3 {
 .top-padded {
 	padding-top: 2em;
 }
+
+.tarif-frais-dep.right-column {
+    margin: 0em 0 3em 2em;
+}
