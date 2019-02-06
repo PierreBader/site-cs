@@ -3,7 +3,7 @@ body {
 	margin: 0;
 	text-align: justify;
 	font-size: 18px;
-	background: url('/images/clean_textile.png');
+	background: url('../images/clean_textile.png');
 }
 
 h2 {
@@ -63,16 +63,11 @@ a:hover {
 }
 
 a[target="_blank"]:after {
-	background-image: url(/images/link.svg);
 	background-size: 1em;
 	content: " ";
 	width: 0.9em;
 	height: 0.9em;
 	display: inline-block;
-}
-
-a[target="_blank"]:hover:after {
-	background-image: url(/images/link-hover.svg);
 }
 
 nav a {
@@ -201,23 +196,23 @@ h3 {
 }
 
 #photo1 .background {
-	background-image: url('/images/photo1.jpeg');
+	background-image: url('../images/photo1.jpeg');
 }
 
 #photo2 .background {
-	background-image: url('/images/photo2.jpeg');
+	background-image: url('../images/photo2.jpeg');
 }
 
 #photo3 .background {
-	background-image: url('/images/photo3.jpeg');
+	background-image: url('../images/photo3.jpeg');
 }
 
 #photo4 .background {
-	background-image: url('/images/photo4.jpeg');
+	background-image: url('../images/photo4.jpeg');
 }
 
 #photo5 .background {
-	background-image: url('/images/photo5.jpeg');
+	background-image: url('../images/photo5.jpeg');
 }
 
 
@@ -345,11 +340,11 @@ h3 {
 #apropos .grid-container,
 #valeurs .grid-container,
 #contact .grid-container {
-	background: url('/images/ricepaper2.png');
+	background: url('../images/ricepaper2.png');
 }
 
 #mission .grid-container {
-	background: url('/images/dust_scratches.png');
+	background: url('../images/dust_scratches.png');
 }
 
 #objectif h2,
