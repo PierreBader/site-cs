@@ -368,6 +368,17 @@ h3 {
 	text-shadow: 0px 0px 5px #fffef5;
 }
 
+.tarif-cards {
+	display: flex;
+	flex-wrap: wrap;	
+    justify-content: center;
+}
+
+.tarif-cards .tarif-card {	
+    margin: 20px;
+    flex: 1;
+    min-width: 318px;
+}
 .tarif-card {
 	background-color: #f0dac0;
 	color: #382425;
